@@ -15,8 +15,9 @@
             }
             
         }
-        echo "<pre>".print_r($departamentos)."</pre>";
-        echo"</div></body></html>";
+        echo "<pre>";
+        print_r($departamentos);
+        echo"</pre></div></body></html>";
         ; 
         
 ?>
