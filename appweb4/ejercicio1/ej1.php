@@ -23,28 +23,21 @@
               <a href="#tab1Id" class="nav-link active">Active</a>
           </li>
           <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tareas</a>
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
               <div class="dropdown-menu">
-                  <a class="dropdown-item" href="./ejercicio1/ej1.php">Ejercicio 1</a>
-                  <a class="dropdown-item" href="./ejercicio2/ej2.php">Ejercicio 2</a>
-                  <a class="dropdown-item" href="./ejercicio3/ej3.php">Ejercicio 3</a>
+                  <a class="dropdown-item" href="#tab2Id">Action</a>
+                  <a class="dropdown-item" href="#tab3Id">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#tab4Id">Action</a>
               </div>
           </li>
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" 
-                href="#" role="button" aria-haspopup="true" aria-expanded="false">Recursos</a>
-              <div class="dropdown-menu">
-                  <a class="dropdown-item" href="./imagenes">Imagenes</a>
-                  <a class="dropdown-item" href="./estilos">Estilos</a>
-                  <a class="dropdown-item" href="./datos">Datos</a>
-              </div>
+          <li class="nav-item">
+              <a href="#tab5Id" class="nav-link">Another link</a>
+          </li>
+          <li class="nav-item">
+              <a href="#" class="nav-link disabled">Disabled</a>
           </li>
       </ul>
-      
-      <!-- Tab panes -->
-      <div class="sin_margen">
-        <image class="img_central" src="imagenes/fondo_1.png" />
-      </div>
 
 
   </body>
