@@ -4,21 +4,25 @@
     require_once '../datos/datos.php';
     require_once '../datos/cabecera.php';
         
-    $dept = [];
-    $dept_aux = [];
+    $dept = ["Contabilidad" => 0];
+    $emple = [];
     $cont=0;
     
     foreach($datos as $empresa) {
+
         echo "Entrada:".++$cont." ";
         $cont2=0;
+        echo $empresa["DEPARTAMENTO"];
         foreach($dept as $name){
+
             echo "Entrada: ".$cont.".".++$cont2." ";
-            if($empresa["DEPARTAMENTO"]==$name){
-               $dept_aux = [$name => $empresa["EMPLEADOS"]];
-               $dept = array_merge($dept, $dept_aux);
+
+            if($empresa["DEPARTAMENTO"]==$name["Departamento"]){
+               $emple = [$empresa["DEPARTAMENTO"] => $empresa["EMPLEADOS"]];
+               $dept = array_merge($dept, $emple);
                 break; 
             }
-            $dept[] = [$name => $empresa["EMPLEADOS"]];  
+            $dept[] = [$empresa["DEPARTAMENTO"] => $empresa["EMPLEADOS"]];  
         }
     }
 
@@ -33,7 +37,8 @@
 
     foreach($dept as $row){
         $html = $html."<tr>";
-        $html = $html."<td>".$x["DEPARTAMENTO"]."</td>";
+        $html = $html."<td>".$row["Departamento"]."</td>";
+        $html = $html."<td>".$row["Empleados"]."</td>";
         $html = $html."</tr>";
     }
 
