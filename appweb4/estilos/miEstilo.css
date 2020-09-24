@@ -1,0 +1,53 @@
+.small{
+    font-size:9;
+    font-weight: bold;
+}
+
+.centrado{
+    text-align:center;
+}
+
+.fondo_1{
+    background-color:lightgrey;
+}
+
+.fondo_empty{
+    background-color:grey;
+}
+
+.sus_1{
+    background-color:indianred;
+    color:rgb(235, 233, 233);
+    font-weight: bold;
+}
+
+.sus_2{
+    background-color:rgb(235, 233, 233);
+    color:indianred;
+    font-weight: bold;
+}
+
+.ap_1{
+    background-color:rgb(72, 158, 72);
+    color:rgb(235, 233, 233);;
+    font-weight: bold;
+}
+
+.ap_2{
+    background-color:rgb(235, 233, 233);
+    color:rgb(72, 158, 72);
+    font-weight: bold;
+}
+
+.marco1{
+    margin-top:1.5%;
+    padding:10px;
+    padding-right:15px;
+    padding-left:15px;
+    background-color: rgb(236, 235, 222);
+}
+
+.sin_margen{
+    margin:0%;
+    padding:0%;
+}
