@@ -20,7 +20,7 @@
       <!-- Nav tabs -->
       <ul class="nav nav-tabs" id="navId">
           <li class="nav-item">
-              <a href="#tab1Id" class="nav-link active">Active</a>
+              <a href="#" class="nav-link active">HOME</a>
           </li>
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tareas</a>
