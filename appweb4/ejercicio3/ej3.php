@@ -4,7 +4,7 @@
     require_once '../datos/datos.php';
     require_once '../datos/cabecera.php';
         
-    $dept = ["Contabilidad" => 0];
+    $dept = [["Departamento" => "Contabilidad", "Empleados" => 0]];
     $emple = [];
     $cont=0;
     
@@ -12,17 +12,16 @@
 
         echo "Entrada:".++$cont." ";
         $cont2=0;
-        echo $empresa["DEPARTAMENTO"];
         foreach($dept as $name){
 
             echo "Entrada: ".$cont.".".++$cont2." ";
 
             if($empresa["DEPARTAMENTO"]==$name["Departamento"]){
-               $emple = [$empresa["DEPARTAMENTO"] => $empresa["EMPLEADOS"]];
+               $emple = ["Departamento" => $name["Departamento"], "Empleados" => $empresa["EMPLEADOS"]];
                $dept = array_merge($dept, $emple);
                 break; 
             }
-            $dept[] = [$empresa["DEPARTAMENTO"] => $empresa["EMPLEADOS"]];  
+            $dept[] = ["Departamento" => $name["Departamento"], "Empleados" => $empresa["EMPLEADOS"]]; 
         }
     }
 
