@@ -15,7 +15,7 @@
             $html = $html."<td>".$empresa["EMPLEADOS"]."</td>";
             $html = $html."</tr>";
           }
-          $html = $html."</div></body></html>";
+          $html = $html."</table></div></body></html>";
           echo $head,$html;
         ;
         
