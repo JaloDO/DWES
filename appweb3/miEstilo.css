@@ -42,6 +42,8 @@
 .marco1{
     margin-top:1.5%;
     padding:10px;
+    padding-right:15px;
+    padding-left:15px;
     background-color: rgb(236, 235, 222);
 }
 

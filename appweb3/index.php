@@ -36,7 +36,7 @@
                 $b = $j * 0.8;
                 $res = $a + $b;
                 if($res<5){
-                    $html = $html."<td class='sus_2'>".$res."</td>";
+                    $html = $html."<td class='sus_1'>".$res."</td>";
                 }
                 else{
                     $html = $html."<td class='ap_1'>".$res."</td>";
