@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="tratarFormulario.php">
+        Nombre:
+        <input type="text" id="nombre" name="nombre" />
+        <br />
+
+        <p>
+            DAW<input type="radio" name="ciclo" value="daw" />
+            DAM<input type="radio" name="ciclo" value="dam" />
+            ASIR<input type="radio" name="ciclo" value="asir" />
+        </p>
+
+        <p>
+            primero<input type="checkbox" name="curso" value="primero" />
+            segundo<input type="checkbox" name="curso" value="segundo" />
+            parcial<input type="checkbox" name="curso" value="parcial" />
+        </p>
+
+        <p>
+            primero<input type="checkbox" name="info[]" value="pendientes" />
+            becario<input type="checkbox" name="info[]" value="becario" />
+            ingles<input type="checkbox" name="info[]" value="ingles" />
+        </p>
+
+        <select>
+            <option name="presencial">Presencial</option>
+            <option name="online">Online</option>
+        </select>
+        <p>
+            Observaciones<textarea name="observaciones"></textarea>
+        </p>
+        <input type="submit" value="Enviar" />
+    </form>
+    
+    
+</body>
+</html>
